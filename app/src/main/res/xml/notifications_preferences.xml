@@ -1,0 +1,16 @@
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Sounds">
+
+        <SwitchPreferenceCompat
+            android:key="notifications"
+            android:title="Notifications"
+            android:summary="Play sounds when status updated"/>
+
+        <SwitchPreferenceCompat
+            android:key="attachment"
+            android:title="@string/attachment_title" />
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

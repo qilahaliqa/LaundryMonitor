@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "769916385397",
+    "firebase_url": "https://laundrymonitor-a23a1.firebaseio.com",
+    "project_id": "laundrymonitor-a23a1",
+    "storage_bucket": "laundrymonitor-a23a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769916385397:android:ef21789a2d9b73c1",
+        "android_client_info": {
+          "package_name": "com.example.laundrymonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769916385397-dktfsrjeuc67tsuicp14k7fanfsf0p17.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.laundrymonitor",
+            "certificate_hash": "0488e8e19113fb5939e7f3278f262f593eb341ec"
+          }
+        },
+        {
+          "client_id": "769916385397-mqkgjvmbtlukn7cnhkrqesk23soobg7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKvcSPYw9uEp4y296qWZyEMmw4j0UEdww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769916385397-mqkgjvmbtlukn7cnhkrqesk23soobg7a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

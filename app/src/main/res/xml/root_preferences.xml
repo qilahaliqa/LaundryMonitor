@@ -1,0 +1,22 @@
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:icon="@drawable/ic_menu_person"
+        android:title="Profile">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.laundrymonitor"
+            android:targetClass="com.example.laundrymonitor.ProfileActivity" />
+    </Preference>
+
+    <Preference
+        android:icon="@drawable/ic_notifications"
+        android:title="Notifications"
+        android:fragment="com.example.laundrymonitor.Fragment.NotificationsFragment" />
+
+    <Preference
+        android:icon="@drawable/ic_help"
+        android:title="Help"
+        android:fragment="com.example.laundrymonitor.Fragment.HelpFragment" />
+
+</androidx.preference.PreferenceScreen>

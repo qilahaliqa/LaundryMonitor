@@ -1,0 +1,16 @@
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:icon="@drawable/ic_menu_person"
+        android:title="Contact Us" />
+
+    <Preference
+        android:icon="@drawable/ic_help"
+        android:title="FAQ">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.laundrymonitor"
+            android:targetClass="com.example.laundrymonitor.Activity.SliderActivity" />
+    </Preference>
+
+</androidx.preference.PreferenceScreen>
