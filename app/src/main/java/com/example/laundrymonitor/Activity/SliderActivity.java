@@ -3,6 +3,7 @@ package com.example.laundrymonitor.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -48,6 +49,18 @@ public class SliderActivity extends AppCompatActivity {
 
                 sviewPager.setCurrentItem(sCurrentPage + 1);
 
+                String btn = sNextBtn.getText().toString();
+                if (btn.equals("Finish")){
+                    sNextBtn.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            onBackPressed();
+                        }
+                    });
+
+
+                }
+
             }
         });
 
@@ -64,7 +77,7 @@ public class SliderActivity extends AppCompatActivity {
 
     public void addDotsIndicator(int position){
 
-        sLayout = new TextView[3];
+        sLayout = new TextView[5];
 
         for (int i=0; i<sLayout.length; i++) {
 
@@ -112,6 +125,8 @@ public class SliderActivity extends AppCompatActivity {
 
                 sNextBtn.setText("Finish");
                 sBackBtn.setText("Back");
+
+
 
             }else {
 

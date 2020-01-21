@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/gradient"
     tools:context=".Activity.UpdateProfileActivity">
 
     <LinearLayout
@@ -32,7 +33,7 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/close"
+                    android:id="@+id/closeBar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
@@ -44,22 +45,9 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="10dp"
-                    android:layout_toEndOf="@id/close"
-                    android:text="PROFILE"
+                    android:layout_toEndOf="@id/closeBar"
+                    android:text="UPDATE MACHINE"
                     android:textColor="@color/design_default_color_on_secondary" />
-
-                <Button
-                    android:id="@+id/update"
-                    android:layout_width="54dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginEnd="7dp"
-                    android:layout_marginRight="7dp"
-                    android:background="@color/colorTransparent"
-                    android:text="SAVE"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
 
             </RelativeLayout>
 
@@ -77,35 +65,48 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/image_profile"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:src="@mipmap/ic_launcher_round" />
+        <Spinner
+            android:id="@+id/kolejType1"
+            android:layout_width="281dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="55dp"
+            android:background="@color/colorlGrey"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
+        </Spinner>
 
-        <EditText
-            android:id="@+id/profile_username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <Spinner
+            android:id="@+id/machineType1"
+            android:layout_width="281dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="55dp"
             android:layout_marginTop="20dp"
-            android:hint="Username" />
+            android:layout_marginEnd="55dp"
+            android:background="@color/colorlGrey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/profile_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:hint="Email" />
+        </Spinner>
 
-        <EditText
-            android:id="@+id/profile_phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <Spinner
+            android:id="@+id/slotType1"
+            android:layout_width="281dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="55dp"
             android:layout_marginTop="20dp"
-            android:hint="Phone Number" />
+            android:layout_marginEnd="55dp"
+            android:background="@color/colorlGrey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </Spinner>
 
     </LinearLayout>
 
@@ -120,7 +121,7 @@
 
 
         <Button
-            android:id="@+id/action_logout"
+            android:id="@+id/updateMachine"
             android:layout_width="388dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -128,7 +129,7 @@
             android:layout_marginEnd="7dp"
             android:layout_marginRight="7dp"
             android:background="@color/colorWhite"
-            android:text="LOGOUT"
+            android:text="Update"
             android:textColor="@color/colorAccent"
             android:textSize="16sp" />
 

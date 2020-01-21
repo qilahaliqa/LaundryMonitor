@@ -3,15 +3,15 @@ package com.example.laundrymonitor.Activity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.laundrymonitor.R;
-import com.example.laundrymonitor.User;
+import com.example.laundrymonitor.Model.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -21,10 +21,9 @@ import com.google.firebase.database.ValueEventListener;
 
 public class UpdateProfileActivity extends AppCompatActivity {
 
-    private ImageView close, profileImage;
-    private TextView changeProfile;
-    private Button save;
-    private TextView profileUsername, profileEmail, profilePhone;
+    private ImageView close;
+    private Button save, logout;
+    private EditText profileUsername, profileEmail, profilePhone, profilePassword;
     private FirebaseDatabase firebaseDatabase;
     private FirebaseAuth firebaseAuth;
 
@@ -34,9 +33,8 @@ public class UpdateProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_update_profile);
 
         close = findViewById(R.id.close);
-        profileImage = findViewById(R.id.image_profile);
-        changeProfile = findViewById(R.id.change_profile);
         save = findViewById(R.id.update);
+        logout = findViewById(R.id.action_logout);
         profileUsername = findViewById(R.id.profile_username);
         profileEmail =  findViewById(R.id.profile_email);
         profilePhone = findViewById(R.id.profile_phone);
@@ -44,7 +42,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
 
-        final DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
+        final DatabaseReference databaseReference = firebaseDatabase.getReference("User").child(firebaseAuth.getUid());
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -56,15 +54,16 @@ public class UpdateProfileActivity extends AppCompatActivity {
                 profilePhone.setText(user.getPhone());
                 profileEmail.setText(user.getEmail());
 
+
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
                 Toast.makeText(UpdateProfileActivity.this, databaseError.getCode(), Toast.LENGTH_SHORT).show();
-
             }
         });
+
+
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,7 +73,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
                 String phone = profilePhone.getText().toString();
                 String email = profileEmail.getText().toString();
 
-                User user = new User(username, phone, email);
+                User user = new User(email, username, phone);
 
                 databaseReference.setValue(user);
 
@@ -91,6 +90,17 @@ public class UpdateProfileActivity extends AppCompatActivity {
             }
         });
 
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                firebaseAuth = FirebaseAuth.getInstance();
+                firebaseAuth.signOut();
+                finish();
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+
+            }
+        });
 
     }
 }

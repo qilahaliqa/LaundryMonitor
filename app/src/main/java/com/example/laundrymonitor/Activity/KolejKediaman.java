@@ -1,6 +1,8 @@
 package com.example.laundrymonitor.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -35,5 +37,17 @@ public class KolejKediaman extends AppCompatActivity {
                 startActivity(startIntent);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
+        System.exit(0);
+
     }
 }

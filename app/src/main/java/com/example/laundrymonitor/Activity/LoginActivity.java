@@ -93,11 +93,20 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intSignUp);
             }
         });
+
     }
 
     @Override
     protected void onStart() {
         super.onStart();
         firebaseAuth.addAuthStateListener(authStateListener);
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        super.onBackPressed();
+        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+        finish();
     }
 }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textLoc2"
+        android:layout_width="331dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="289dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="34dp"
+        android:text="CHOOSE COLLEGE RESIDENCE"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnLanang2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLanang2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:text="KOLEJ TUN SRI LANANG"
+        android:background="@drawable/roundedbutton"
+        app:layout_constraintBottom_toTopOf="@+id/btnGemala2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLoc2" />
+
+    <Button
+        android:id="@+id/btnGemala2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="174dp"
+        android:background="@drawable/roundedbutton"
+        android:text="KOLEJ TUN SRI GEMALA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnLanang2"
+        app:layout_constraintTop_toBottomOf="@+id/btnLanang2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

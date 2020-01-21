@@ -8,34 +8,11 @@
     tools:context=".Activity.Machine2Activity"
     tools:showIn="@layout/app_bar_machine2">
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/machine2TabLayout"
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerMachine2">
 
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/machineLanangA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lanang A" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/machineLanangB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lanang B" />
-
-    </com.google.android.material.tabs.TabLayout>
-
-    <androidx.viewpager.widget.ViewPager
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/machine2Viewer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/machine2TabLayout" />
+    </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

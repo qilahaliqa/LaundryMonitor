@@ -1,4 +1,4 @@
-package com.example.laundrymonitor;
+package com.example.laundrymonitor.Model;
 
 public class User {
     private String Email, Username, Phone;

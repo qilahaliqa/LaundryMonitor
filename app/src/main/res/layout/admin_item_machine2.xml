@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/adminMachine2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/washer" />
+
+        <TextView
+            android:id="@+id/number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/image2"
+            android:text="WASHER"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/slot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/image2"
+            android:text="AVAILABLE"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/loc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/image2"
+            android:text="LANANG A"
+            android:textSize="16sp" />
+
+
+        <ImageButton
+            android:id="@+id/btnDelete2"
+            android:layout_width="62dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorTransparent"
+            android:src="@drawable/ic_delete" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

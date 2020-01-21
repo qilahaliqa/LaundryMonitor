@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="135dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/item_machine2"
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_image2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/washer" />
+
+        <TextView
+            android:id="@+id/item_number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/item_image2"
+            android:text="WASHER"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_slot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/item_image2"
+            android:text="AVAILABLE"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_loc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/item_image2"
+            android:text="LANANG A"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnSelect2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransparent"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

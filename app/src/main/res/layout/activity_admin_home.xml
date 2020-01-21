@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
-    tools:context=".Activity.HomeActivity">
+    tools:context=".Activity.AdminHomeActivity">
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -27,7 +26,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="230dp"
-                    android:background="@drawable/back"
+                    android:background="@drawable/gradient"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -42,7 +41,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
-                        android:text="GOWASH DASHBOARD"
+                        android:text="ADMIN GOWASH DASHBOARD"
                         android:textColor="#ffff"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -90,11 +89,11 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
-                                    android:text="MACHINE ACTIVITY"
+                                    android:text="ADD MACHINE"
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/button1"
+                                    android:id="@+id/addHome"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@color/cardview_shadow_end_color" />
@@ -102,46 +101,6 @@
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="5dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                                <ImageView
-                                    android:id="@+id/imageView2"
-                                    android:layout_width="50dp"
-                                    android:layout_height="50dp"
-                                    android:layout_centerInParent="true"
-                                    android:src="@drawable/profile" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_below="@+id/imageView2"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp"
-                                    android:text="PROFILE"
-                                    android:textSize="16sp" />
-
-                                <Button
-                                    android:id="@+id/button2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/cardview_shadow_end_color" />
-
-                            </RelativeLayout>
-
-                        </androidx.cardview.widget.CardView>
-
 
                     </LinearLayout>
 
@@ -168,7 +127,7 @@
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_centerInParent="true"
-                                    android:src="@drawable/settings" />
+                                    android:src="@drawable/washer" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -177,11 +136,11 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
-                                    android:text="SETTINGS"
+                                    android:text="MACHINE LIST"
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/button3"
+                                    android:id="@+id/listHome"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@color/cardview_shadow_end_color" />
@@ -190,11 +149,19 @@
 
                         </androidx.cardview.widget.CardView>
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
                             android:layout_weight="1"
                             android:orientation="vertical">
 
@@ -203,24 +170,24 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
-                                    android:id="@+id/imageView4"
+                                    android:id="@+id/imageView2"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_centerInParent="true"
-                                    android:src="@drawable/tips" />
+                                    android:src="@drawable/ic_menu_person" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_below="@+id/imageView4"
+                                    android:layout_below="@+id/imageView2"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
-                                    android:text="INFO"
+                                    android:text="LOG OUT"
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/button4"
+                                    android:id="@+id/adminLogout"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@color/cardview_shadow_end_color" />
@@ -228,6 +195,7 @@
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
+
 
                     </LinearLayout>
 

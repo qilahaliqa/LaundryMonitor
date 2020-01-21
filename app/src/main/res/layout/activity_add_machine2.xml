@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Activity.AddMachine">
+
+    <Spinner
+        android:id="@+id/kolejType"
+        android:layout_width="281dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="55dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/machineType"
+        android:layout_width="281dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/slotType"
+        android:layout_width="281dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="372dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/addMachine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="162dp"
+        android:background="@drawable/roundedbutton"
+        android:text="ADD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slotType" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

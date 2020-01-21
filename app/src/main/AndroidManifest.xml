@@ -10,9 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Activity.ListMachine2Activity"
+            android:label="@string/title_activity_list_machine2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Activity.ListMachineActivity"
+            android:label="@string/title_activity_list_machine"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.AdminHomeActivity" />
+        <activity android:name=".Activity.AdminLoginActivity" />
+        <activity android:name=".Activity.AdminAddActivity" />
+        <activity android:name=".Activity.AdminListActivity" />
+        <activity android:name=".Activity.AddMachine" />
+        <activity android:name=".Activity.AddMachine2" />
+        <activity
             android:name=".Activity.Machine2Activity"
             android:label="@string/title_activity_machine2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Activity.KolejKediaman" />
         <activity
             android:name=".Activity.MachineActivity"
@@ -33,6 +47,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activity.UpdateMachine" />
+        <activity android:name=".Activity.SelectMachine" />
+
+        <receiver android:name=".ReminderBroadcast"/>
+        <receiver android:name=".ReminderBroadcast"/>
     </application>
 
 </manifest>

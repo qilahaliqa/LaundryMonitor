@@ -26,14 +26,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button activitySignUp = (Button)findViewById(R.id.buttontwo);
-        activitySignUp.setOnClickListener(new View.OnClickListener() {
+        Button activityAdmin = (Button)findViewById(R.id.buttontwo);
+        activityAdmin.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), SignUpActivity.class);
+                Intent startIntent = new Intent(getApplicationContext(), AdminLoginActivity.class);
                 startActivity(startIntent);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
+        System.exit(0);
+
     }
 }

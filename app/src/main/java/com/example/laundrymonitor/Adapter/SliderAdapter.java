@@ -27,9 +27,11 @@ public class SliderAdapter extends PagerAdapter {
 
     public int[] slideImage = {
 
-            R.drawable.eat ,
-            R.drawable.sleep ,
-            R.drawable.work
+            R.drawable.step1 ,
+            R.drawable.step2 ,
+            R.drawable.step3 ,
+            R.drawable.step5 ,
+            R.drawable.step4
 
     };
 
@@ -37,14 +39,18 @@ public class SliderAdapter extends PagerAdapter {
 
             "STEP 1" ,
             "STEP 2" ,
-            "STEP 3"
+            "STEP 3",
+            "STEP 4",
+            "STEP 5"
     };
 
     public String[] slideDes = {
 
-            "DESCRIPTION 1" ,
-            "DESCRIPTION 2" ,
-            "DESCRIPTION 3"
+            "Choose your college residence" ,
+            "Check availability" ,
+            "Select your machine and press yes" ,
+            "You will receive a notification within 30 minutes" ,
+            "Press yes to stop after finished your laundry"
 
 
     };

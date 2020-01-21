@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.laundrymonitor.R;
-import com.example.laundrymonitor.User;
+import com.example.laundrymonitor.Model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -47,21 +47,21 @@ public class SignUpActivity extends AppCompatActivity {
                 String pwd = password.getText().toString();
                 final String username = user.getText().toString();
                 final String phone = phoneNum.getText().toString();
-                if (email.isEmpty()){
-                    emailId.setError("Please enter email address");
-                    emailId.requestFocus();
-                }
-                else if (pwd.isEmpty()){
-                    password.setError("Please enter your password");
-                    password.requestFocus();
-                }
-                else if (username.isEmpty()){
+                if (username.isEmpty()){
                     user.setError("Please enter your username");
                     user.requestFocus();
                 }
                 else if (phone.isEmpty()){
                     phoneNum.setError("Please enter your phone number");
                     phoneNum.requestFocus();
+                }
+                else if (email.isEmpty()){
+                    emailId.setError("Please enter email address");
+                    emailId.requestFocus();
+                }
+                else if (pwd.isEmpty()){
+                    password.setError("Please enter your password");
+                    password.requestFocus();
                 }
                 else if (!(email.isEmpty() && pwd.isEmpty())){
                     firebaseAuth.createUserWithEmailAndPassword(email, pwd).addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {

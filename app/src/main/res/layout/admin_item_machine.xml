@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="3dp"
     app:cardElevation="3dp"
     app:cardUseCompatPadding="true"
-    android:id="@+id/machineGC"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Fragment.MachineGCFragment">
+    android:id="@+id/adminMachine"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -30,30 +28,56 @@
             android:src="@drawable/washer" />
 
         <TextView
-            android:id="@+id/numGC"
+            android:id="@+id/number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="50dp"
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@+id/imageView"
-            android:text="MACHINE 01"
+            android:text="WASHER"
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/slotGC"
+            android:id="@+id/slot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@+id/imageView"
             android:text="AVAILABLE"
             android:textSize="16sp" />
 
+        <TextView
+            android:id="@+id/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="LANANG A"
+            android:textSize="16sp" />
+
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="62dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorTransparent"
+            android:src="@drawable/ic_delete" />
+
+
+
+
     </RelativeLayout>
 
-
-
 </androidx.cardview.widget.CardView>
+
+
+
